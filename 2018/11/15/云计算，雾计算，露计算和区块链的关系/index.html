@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="blockchain,cloud computing,">
 
 
 
@@ -79,37 +79,20 @@
 
 
 
-<meta name="description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
+<meta name="description" content="最近在看云计算，雾计算、边缘计算和露计算，结合区块链产生了一些新的思考。毕竟年纪大了，有重要的东西就只能抓紧记下来，以免今晚睡一觉就什么也记不得了。以下有是我根据各大网站、论文、书籍整理的相关内容。（如若侵权，请邮件联系我！） 云计算&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;云计算是一种利用互联网实现随时随地、按需、便捷地使用共享计算设施、存储">
+<meta name="keywords" content="blockchain,cloud computing">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）">
-<meta property="og:url" content="http://yoursite.com/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/index.html">
+<meta property="og:title" content="云计算，雾计算，边缘计算和区块链的关系">
+<meta property="og:url" content="http://yoursite.com/2018/11/15/云计算，雾计算，露计算和区块链的关系/index.html">
 <meta property="og:site_name" content="Blockchain小天地">
-<meta property="og:description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
+<meta property="og:description" content="最近在看云计算，雾计算、边缘计算和露计算，结合区块链产生了一些新的思考。毕竟年纪大了，有重要的东西就只能抓紧记下来，以免今晚睡一觉就什么也记不得了。以下有是我根据各大网站、论文、书籍整理的相关内容。（如若侵权，请邮件联系我！） 云计算&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;云计算是一种利用互联网实现随时随地、按需、便捷地使用共享计算设施、存储">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/4.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/6.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/7.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/8.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/9.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/10.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/11.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/12.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/13.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/14.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/15.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/16.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/17.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/18.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/19.png">
-<meta property="og:updated_time" content="2018-11-10T06:37:12.103Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/20.png">
+<meta property="og:updated_time" content="2018-11-15T08:42:03.458Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）">
-<meta name="twitter:description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png">
+<meta name="twitter:title" content="云计算，雾计算，边缘计算和区块链的关系">
+<meta name="twitter:description" content="最近在看云计算，雾计算、边缘计算和露计算，结合区块链产生了一些新的思考。毕竟年纪大了，有重要的东西就只能抓紧记下来，以免今晚睡一觉就什么也记不得了。以下有是我根据各大网站、论文、书籍整理的相关内容。（如若侵权，请邮件联系我！） 云计算&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;云计算是一种利用互联网实现随时随地、按需、便捷地使用共享计算设施、存储">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/20.png">
 
 
 
@@ -139,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/15/云计算，雾计算，露计算和区块链的关系/">
 
 
 
 
 
-  <title>在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版） | Blockchain小天地</title>
+  <title>云计算，雾计算，边缘计算和区块链的关系 | Blockchain小天地</title>
   
 
 
@@ -304,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/15/云计算，雾计算，露计算和区块链的关系/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZY">
@@ -321,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）</h1>
+          <h1 class="post-title" itemprop="name headline">云计算，雾计算，边缘计算和区块链的关系</h1>
         
 
         <div class="post-meta">
@@ -333,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-10T14:34:44+08:00">
-                2018-11-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-15T15:24:20+08:00">
+                2018-11-15
               </time>
             
 
@@ -352,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/" itemprop="commentCount"></span>
+                <a href="/2018/11/15/云计算，雾计算，露计算和区块链的关系/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/15/云计算，雾计算，露计算和区块链的关系/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,33 +364,11 @@
       
 
       
-        <p>首先根据官方网站给出的步骤部署好fabric网络<br><strong>官方网站地址</strong>：<a href="https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html" target="_blank" rel="noopener">https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html</a></p>
-<p>在fabric/scripts/fabric-samples/first-network目录下执行如下操作：<br><strong>//修改docker-compose-cli.yaml中的CORE_LOGGING_LEVEL = DEBUG</strong><br>CORE_LOGGING_LEVEL = DEBUG</p>
-<p><strong>//用cryptogen工具产生证书</strong><br>cryptogen generate<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png" alt="Alt text"></p>
-<p><strong>//用configtxgen创建创世快，channel和peer</strong><br>cryptogen generate –config=./crypto-config.yaml<br>export FABRIC_CFG_PATH=$PWD<br>configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/2.png" alt="Alt text"></p>
-<p><strong>//常见通道配置事务</strong><br>export CHANNEL_NAME=testchannel  &amp;&amp; configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./<br>channel-artifacts/channel.tx -channelID $CHANNEL_NAME<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/3.png" alt="Alt text"></p>
-<p><strong>//为org1和org2锚定peer</strong><br>configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org1MSPanchors.tx<br>-channelID $CHANNEL_NAME -asOrg Org1MSP<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/4.png" alt="Alt text"></p>
-<p>configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org2MSPanchors.tx<br>-channelID $CHANNEL_NAME -asOrg Org2MSP<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/5.png" alt="Alt text"></p>
-<p><strong>//打开网络</strong><br>docker-compose -f docker-compose-cli.yaml up -d<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/6.png" alt="Alt text"></p>
-<p><strong>//配置环境变量for PEER0</strong><br>export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br><a href="mailto:org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">org1.example.com/users/Admin@org1.example.com</a>/msp<br>export CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>export CORE_PEER_LOCALMSPID=”Org1MSP”<br>exportCORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br>org1.example.com/peers/peer0.org1.example.com/tls/ca.crt<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/7.png" alt="Alt text"></p>
-<p><strong>//在网络中加入其它的通道</strong><br>docker exec -it cli bash    <strong>//进入cli容器（这是进入默认的org1.peer0的）</strong><br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/8.png" alt="Alt text"></p>
-<p>可以通过下面的修改默认的Environment variables for PEER0<br>export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br><a href="mailto:peerOrganizations/org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">peerOrganizations/org1.example.com/users/Admin@org1.example.com</a>/msp<br>export CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>export CORE_PEER_LOCALMSPID=”Org1MSP”<br>exportCORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br>peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt</p>
-<p><strong>//配置环境变量</strong><br>export CHANNEL_NAME=testchannel</p>
-<p><strong>//创建通道</strong><br>peer channel create -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/channel.tx<br>–tls –cafile peer channel create -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/<br>channel.tx –tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/9.png" alt="Alt text"></p>
-<p><strong>//把peer加入channel（此时是peer0.org1.example.com）</strong><br>peer channel join -b mychannel.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/10.png" alt="Alt text"></p>
-<p><strong>修改环境变量把其他的peer加入channel</strong><br><em>Environment variables for PEER0</em><br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br><a href="mailto:org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">org1.example.com/users/Admin@org1.example.com</a>/msp<br>CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>CORE_PEER_LOCALMSPID=”Org1MSP”<br>CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br>org1.example.com/peers/peer0.org1.example.com/tls/ca.crt</p>
-<p><em>Environment variables for PEER1</em><br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br><a href="mailto:peerOrganizations/org2.example.com/users/Admin@org2.example.com" target="_blank" rel="noopener">peerOrganizations/org2.example.com/users/Admin@org2.example.com</a>/msp CORE_PEER_ADDRESS=peer0.org2.example.com:7051<br>CORE_PEER_LOCALMSPID=”Org2MSP” CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/<br>hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/11.png" alt="Alt text"></p>
-<p>peer channel join -b mychannel.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/12.png" alt="Alt text"></p>
-<p><strong>//执行更新锚节点配置命令</strong><br>peer channel update -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/Org2MSPanchors.tx<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/13.png" alt="Alt text"><br>如果需要加入其它组织，变更脚本变量后执行更新锚节点操作即可，至此，手动配置网络完成, 可以编写并测试链码。</p>
-<p><strong>//切换至：pee0.org1.example.com</strong><br>CORE_PEER_LOCALMSPID=”Org1MSP”<br>CORE_PEER_ADDRESS=peer1.org1.example.com:7051<br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabri c/peer/crypto/<br><a href="mailto:peerOrganizations/org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">peerOrganizations/org1.example.com/users/Admin@org1.example.com</a>/msp<br>CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fa bric/peer/crypto/<br>peerOrganizations/org1.example.com/peers/peer1.org1.exa mple.com/tls/ca.crt</p>
-<p><strong>//查看环境变量</strong><br>echo $CORE_PEER_LOCALMSPID #确认当前指定的org<br>echo $CORE_PEER_ADDRESS  #确认当前指定的peer<br>export CHANNEL_NAME=mychannel #设置通道名称<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/14.png" alt="Alt text"></p>
-<p><strong>//把本地写好的链码复制到docker cli容器中</strong><br>docker cp 本地路径 容器长ID:容器路径</p>
-<p><strong>//安装链码</strong><br>peer chaincode install -n mycc -v 1.0 -p github.com/chaincode/store/<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/15.png" alt="Alt text"></p>
-<p><strong>//实例化链码</strong><br>peer chaincode instantiate -o orderer.example.com:7050 \<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem \<br>-C $CHANNEL_NAME \<br>-n mycc -v 1.0 \<br>-c ‘{“Args”:[“str”,”helloworld”]}’ \<br>-P “OR(‘Org1MSP.peer’,’Org2MSP.peer’)”<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/16.png" alt="Alt text"></p>
-<p><strong>//测试链码get操作</strong><br>peer chaincode query -C $CHANNEL_NAME -n mycc -c ‘{“Args”:[“get”,”str”]}’<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/17.png" alt="Alt text"></p>
-<p>//测试链码set操作<br>peer chaincode invoke -o orderer.example.com:7050 \<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem  \<br>-C $CHANNEL_NAME -n mycc \<br>-c ‘{“Args”:[“set”,”str”,”hi zhaoyao”]}’<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/18.png" alt="Alt text"></p>
-<p>部署过程中遇到的错误及改正措施：<br>创建channel时出错，Orderer log如下<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/19.png" alt="Alt text"><br>解决办法：清空所有docker容器，清空所有的环境从新开始部署。</p>
-<p>遇到什么问题可以给我留言，或者发邮件给我，我会及时给大家回复~</p>
+        <p><strong>最近在看云计算，雾计算、边缘计算和露计算，结合区块链产生了一些新的思考。</strong><br><em>毕竟年纪大了，有重要的东西就只能抓紧记下来，以免今晚睡一觉就什么也记不得了。</em><br>以下有是我根据各大网站、论文、书籍整理的相关内容。（如若侵权，请邮件联系我！）</p>
+<h1 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;云计算是一种利用互联网实现随时随地、按需、便捷地使用共享计算设施、存储设备、应用程序等资源的计算模式。云计算系统由云平台、云存储、云终端、云安全四个基本部分组成。云平台从用户的角度可分为公有云、私有云、混合云等。通过从提供服务的层次可分为基础设施即服务（Iaas）、平台即服务（Paas）和软件即服务（Saas），目前还出现了区块链即服务（BaaS）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开发者将应用部署到云端后，可以不必再关注那些令人头疼的硬件和软件问题，它们会由云服务提供商的专业团队去解决。使用的是共享的硬件，这意味着像使用一个工具一样去利用云服务。只需要按照你的需要来支付相应的费用，而关于软件的更新，资源的按需扩展都能自动完成。但是现阶段云计算存在计算延迟、拥塞、低可靠性、安全攻击等问题，为了应对这些问题，提出雾计算和露计算等概念。 </p>
+<h1 id="雾计算"><a href="#雾计算" class="headerlink" title="雾计算"></a>雾计算</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾计算旨在终端（个人电脑，手机等）和数据中心之间再加一个网络边缘层（例如再加一个带有存储器的小服务器或路由器），把一些不需要放到“云”上的数据在这一层直接处理和存储，以减少“云”的压力，提高了效率，也提升了传输速率，减低了时延。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾计算并非是些性能强大的服务器，而是由性能较弱、更为分散的各种功能计算机组成，雾计算是介于云计算和个人计算之间的，是半虚拟化的服务计算架构模型，强调数量，不管单个计算节点能力多么弱都要发挥作用。与云计算相比，雾计算所采用的架构更呈分布式，更接近网络边缘。雾计算将数据、数据处理和应用程序集中在网络边缘的设备中，而不像云计算那样将它们几乎全部保存在云中，数据的存储及处理更依赖本地设备，而非服务器。雾计算是新一代分布式计算，符合互联网的“去中心化”特征。自从思科提出了雾计算，已经有ARM、戴尔、英特尔、微软等几大科技公司以及普林斯顿大学加入了这个概念阵营，并成立了非盈利性组织开放雾联盟，旨在推广和加快开放雾计算的普及，促进物联网发展。雾计算是以个人云，私有云，企业云等小型云为主。从上面的描述中可以看出雾计算已经出现分布式的特点。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;云计算重点放在研究计算的方式，雾计算更强调计算的位置，它们在网络拓扑中的位置不同。雾计算介于云计算和个人计算之间的，是半虚拟化的服务计算架构模型。此外，雾计算实际上并没有强力的计算能力，雾计算是将物理上分散的计算机联合起来，形成较弱的计算能力，不过这样的计算能力对于中小型的数据中心，完全够用了，雾计算弥补云计算本地化计算问题。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说了这么多抽象的理论，到底雾计算有哪些应用呢？雾计算通常和物联网技术结合实现落地。物联网发展的最终结果就是将所有的电子设备，移动终端，家用电器等一切都互联起来，这些设备不仅数量巨大，而且分布广泛，只有雾计算才能满足，有了雾计算才使得很多业务可以部署。例如智能交通灯，针对移动性和位置信息的计算，计算量不大，但是对时延要求高，显然只有雾计算最适合。试想如果城市中的所有交通灯都需要有数据中心云计算来统一计算而指挥所有交通灯，这样不仅不及时也容易出错。智能交通灯本意是根据车流量来自动指挥车辆通行，那么实时计算非常重要，雾计算使得每个交通灯自己都有计算能力，从而自行完成智能指挥。</p>
+<h1 id="边缘计算（MEC）"><a href="#边缘计算（MEC）" class="headerlink" title="边缘计算（MEC）"></a>边缘计算（MEC）</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前还处于概念阶段，乍一看雾计算和边缘计算好像是一个东西，翻阅很多资料我发现，边缘计算概念出现时间上早于雾计算，处理能力更靠近数据源。雾计算可以进行边缘计算，但除了边缘网络，雾计算也可以拓展到核心网络，也就是边缘和核心网络的组件都可以作为雾计算的基础设施，而边缘计算更多地专注于终端设备端；雾计算在节点之间具有广泛的对等互连能力，边缘计算在孤岛中运行其节点，需要通过云实现对等流量传输。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以吸尘器为例说明，集中化的雾节点(或者IoT网关)继续从家中的传感器收集信息，检测到垃圾的话就启动吸尘器；边缘计算的解决方案里传感器各自判断有没有垃圾，来发送启动吸尘器的信号。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雾计算与边缘计算都是将智能和计算能力推向靠近数据来源的位置，因此他们常常被混用。他们的区别也正是计算能力所处的位置：<br>1）雾计算将计算能力推向局域网，在雾节点或物联网的网关处完成数据处理；<br>2）边缘计算将边缘网关的智能，处理能力和通信能力直接推送到诸如可编程自动化控制器的设备；<br><strong>下图可以看出两者区别</strong><br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/20.png" alt="Alt text"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下是从网络上copy的边缘计算优缺点：<br><strong>优点</strong><br>1）接近实时的数据处理：因为数据是在边缘结点进行分析，降低了延迟，提升应用的响应速度；<br>2）减少数据传输：数据不需要推送到遥远的云端，减少智能设备和数据中心传输的数据量，节省带宽成本，同时还能减小核心网络的拥堵。比如facebook等社交软件的用户上传的照片在边缘调整到合适的分辨率再上传到云端；<br>3）数据安全：一些比较敏感的数据直接在边缘进行分析，不用当心数据泄漏；<br>4）提高可用性：分担（offload）了中心服务器的计算任务，一定程度上消除了主要的瓶颈，并且降低了出现单点故障的可能；<br><strong>缺点</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;任何东西都是有缺点的，如果只看到优点说明理解的不够深入。边缘计算还处于概念阶段，同样存在很多问题，比如：<br>1）使边缘设备具有处理能力意味着更高的成本和更容易被入侵的危险；<br>2）在大量的边缘设备上进行应用部署和服务监控会成为一个棘手的问题；<br>3）在边缘进行分布式计算并与云端协调任务会让应用编程变得更加复杂；</p>
+<h1 id="和区块链的一些思考"><a href="#和区块链的一些思考" class="headerlink" title="和区块链的一些思考"></a>和区块链的一些思考</h1><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区块链作为一种分布式计算范式，发展的历程也是经受很多坎坷。想象一下假如可以利用区块链技术帮助云计算、雾计算和边缘计算获得更高的性能是不是很棒呢！在IOT中所有的设备都可以无人工干预的情况下连接到区块链中，这些设备成为区块链中的结点，其中产生的数据直接传到区块链网络中，这样每个IOT设备都可以扩展自己本身的能力，例如加入数据分析能力，利用其余设备传上链的数据直接在终端中进行数据分析从而做出更好的决策。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以智能交通等为例，假如所有交通灯都可以看作一个IOT设备，同时也可以看作一个区块链结点，一个城市所有的交通灯构成区块链系统的结点，每个结点之间贡献数据，同时这个网络有一定的数据分析能力。当A道路拥挤时，与之相连的B和C道路可以获得从A交通灯收集的数据快速分析后可以实时调整B和C交通灯的时长，从而自动缓解交通压力。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然，目前这仅仅是想法，但是我相信随着IOT和区块链技术的发展，此想法终究会实现。拭目以待！</p>
 
       
     </div>
@@ -452,6 +413,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/blockchain/" rel="tag"><i class="fa fa-tag"></i> blockchain</a>
+          
+            <a href="/tags/cloud-computing/" rel="tag"><i class="fa fa-tag"></i> cloud computing</a>
+          
+        </div>
+      
 
       
       
@@ -461,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/09/谈谈我与区块链的两三件事/" rel="next" title="谈谈我与区块链的两三件事">
-                <i class="fa fa-chevron-left"></i> 谈谈我与区块链的两三件事
+              <a href="/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/" rel="next" title="在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）">
+                <i class="fa fa-chevron-left"></i> 在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）
               </a>
             
           </div>
@@ -470,10 +439,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/15/云计算，雾计算，露计算和区块链的关系/" rel="prev" title="云计算，雾计算，边缘计算和区块链的关系">
-                云计算，雾计算，边缘计算和区块链的关系 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -528,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -598,6 +572,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#云计算"><span class="nav-number">1.</span> <span class="nav-text">云计算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#雾计算"><span class="nav-number">2.</span> <span class="nav-text">雾计算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#边缘计算（MEC）"><span class="nav-number">3.</span> <span class="nav-text">边缘计算（MEC）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#和区块链的一些思考"><span class="nav-number">4.</span> <span class="nav-text">和区块链的一些思考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
