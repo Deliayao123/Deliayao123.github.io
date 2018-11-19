@@ -1,3 +1,4 @@
+https://deliayao123.github.io/2018/11/18/对于区块链的新思考/
 https://deliayao123.github.io/2018/11/15/云计算，雾计算，露计算和区块链的关系/
 https://deliayao123.github.io/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/
 https://deliayao123.github.io/2018/11/09/谈谈我与区块链的两三件事/
