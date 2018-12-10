@@ -79,37 +79,13 @@
 
 
 
-<meta name="description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
-<meta property="og:type" content="article">
-<meta property="og:title" content="在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）">
-<meta property="og:url" content="https://deliayao123.github.io/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blockchain小天地">
+<meta property="og:url" content="https://deliayao123.github.io/archives/2018/12/index.html">
 <meta property="og:site_name" content="Blockchain小天地">
-<meta property="og:description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/4.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/6.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/7.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/8.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/9.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/10.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/11.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/12.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/13.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/14.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/15.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/16.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/17.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/18.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/19.png">
-<meta property="og:updated_time" content="2018-11-10T06:37:12.103Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）">
-<meta name="twitter:description" content="首先根据官方网站给出的步骤部署好fabric网络官方网站地址：https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html 在fabric/scripts/fabric-samples/first-network目录下执行如下操作：//修改docker-compose-cli.yaml中的CORE_LOG">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png">
+<meta name="twitter:title" content="Blockchain小天地">
 
 
 
@@ -139,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="https://deliayao123.github.io/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/">
+  <link rel="canonical" href="https://deliayao123.github.io/archives/2018/12/">
 
 
 
 
 
-  <title>在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版） | Blockchain小天地</title>
+  <title>归档 | Blockchain小天地</title>
   
 
 
@@ -164,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 <a href="https://github.com/Deliayao123/Deliayao123.github.io.git" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -290,210 +266,72 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 8 篇日志。 继续努力。
+      </span>
 
-  
-  
-  
+      
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deliayao123.github.io/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZY">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blockchain小天地">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">在ubuntu18.04的fabric1.2.0网络中手动部署chaincode（完全跑通版）</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/12/10/计算机系统结构———量化研究方法/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">计算机系统结构———量化研究方法</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-10T14:34:44+08:00">
-                2018-11-10
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>首先根据官方网站给出的步骤部署好fabric网络<br><strong>官方网站地址</strong>：<a href="https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html" target="_blank" rel="noopener">https://hyperledger-fabric.readthedocs.io/en/release-1.2/getting_started.html</a></p>
-<p>在fabric/scripts/fabric-samples/first-network目录下执行如下操作：<br><strong>//修改docker-compose-cli.yaml中的CORE_LOGGING_LEVEL = DEBUG</strong><br>CORE_LOGGING_LEVEL = DEBUG</p>
-<p><strong>//用cryptogen工具产生证书</strong><br>cryptogen generate<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/1.png" alt="Alt text"></p>
-<p><strong>//用configtxgen创建创世快，channel和peer</strong><br>cryptogen generate –config=./crypto-config.yaml<br>export FABRIC_CFG_PATH=$PWD<br>configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/2.png" alt="Alt text"></p>
-<p><strong>//常见通道配置事务</strong><br>export CHANNEL_NAME=testchannel  &amp;&amp; configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./<br>channel-artifacts/channel.tx -channelID $CHANNEL_NAME<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/3.png" alt="Alt text"></p>
-<p><strong>//为org1和org2锚定peer</strong><br>configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org1MSPanchors.tx<br>-channelID $CHANNEL_NAME -asOrg Org1MSP<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/4.png" alt="Alt text"></p>
-<p>configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org2MSPanchors.tx<br>-channelID $CHANNEL_NAME -asOrg Org2MSP<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/5.png" alt="Alt text"></p>
-<p><strong>//打开网络</strong><br>docker-compose -f docker-compose-cli.yaml up -d<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/6.png" alt="Alt text"></p>
-<p><strong>//配置环境变量for PEER0</strong><br>export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br><a href="mailto:org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">org1.example.com/users/Admin@org1.example.com</a>/msp<br>export CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>export CORE_PEER_LOCALMSPID=”Org1MSP”<br>exportCORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br>org1.example.com/peers/peer0.org1.example.com/tls/ca.crt<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/7.png" alt="Alt text"></p>
-<p><strong>//在网络中加入其它的通道</strong><br>docker exec -it cli bash    <strong>//进入cli容器（这是进入默认的org1.peer0的）</strong><br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/8.png" alt="Alt text"></p>
-<p>可以通过下面的修改默认的Environment variables for PEER0<br>export CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br><a href="mailto:peerOrganizations/org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">peerOrganizations/org1.example.com/users/Admin@org1.example.com</a>/msp<br>export CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>export CORE_PEER_LOCALMSPID=”Org1MSP”<br>exportCORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br>peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt</p>
-<p><strong>//配置环境变量</strong><br>export CHANNEL_NAME=testchannel</p>
-<p><strong>//创建通道</strong><br>peer channel create -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/channel.tx<br>–tls –cafile peer channel create -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/<br>channel.tx –tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/9.png" alt="Alt text"></p>
-<p><strong>//把peer加入channel（此时是peer0.org1.example.com）</strong><br>peer channel join -b mychannel.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/10.png" alt="Alt text"></p>
-<p><strong>修改环境变量把其他的peer加入channel</strong><br><em>Environment variables for PEER0</em><br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br><a href="mailto:org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">org1.example.com/users/Admin@org1.example.com</a>/msp<br>CORE_PEER_ADDRESS=peer0.org1.example.com:7051<br>CORE_PEER_LOCALMSPID=”Org1MSP”<br>CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/<br>org1.example.com/peers/peer0.org1.example.com/tls/ca.crt</p>
-<p><em>Environment variables for PEER1</em><br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/<br><a href="mailto:peerOrganizations/org2.example.com/users/Admin@org2.example.com" target="_blank" rel="noopener">peerOrganizations/org2.example.com/users/Admin@org2.example.com</a>/msp CORE_PEER_ADDRESS=peer0.org2.example.com:7051<br>CORE_PEER_LOCALMSPID=”Org2MSP” CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/<br>hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/11.png" alt="Alt text"></p>
-<p>peer channel join -b mychannel.block<br><img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/12.png" alt="Alt text"></p>
-<p><strong>//执行更新锚节点配置命令</strong><br>peer channel update -o orderer.example.com:7050 -c $CHANNEL_NAME -f ./channel-artifacts/Org2MSPanchors.tx<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/13.png" alt="Alt text"><br>如果需要加入其它组织，变更脚本变量后执行更新锚节点操作即可，至此，手动配置网络完成, 可以编写并测试链码。</p>
-<p><strong>//切换至：pee0.org1.example.com</strong><br>CORE_PEER_LOCALMSPID=”Org1MSP”<br>CORE_PEER_ADDRESS=peer1.org1.example.com:7051<br>CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabri c/peer/crypto/<br><a href="mailto:peerOrganizations/org1.example.com/users/Admin@org1.example.com" target="_blank" rel="noopener">peerOrganizations/org1.example.com/users/Admin@org1.example.com</a>/msp<br>CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fa bric/peer/crypto/<br>peerOrganizations/org1.example.com/peers/peer1.org1.exa mple.com/tls/ca.crt</p>
-<p><strong>//查看环境变量</strong><br>echo $CORE_PEER_LOCALMSPID #确认当前指定的org<br>echo $CORE_PEER_ADDRESS  #确认当前指定的peer<br>export CHANNEL_NAME=mychannel #设置通道名称<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/14.png" alt="Alt text"></p>
-<p><strong>//把本地写好的链码复制到docker cli容器中</strong><br>docker cp 本地路径 容器长ID:容器路径</p>
-<p><strong>//安装链码</strong><br>peer chaincode install -n mycc -v 1.0 -p github.com/chaincode/store/<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/15.png" alt="Alt text"></p>
-<p><strong>//实例化链码</strong><br>peer chaincode instantiate -o orderer.example.com:7050 \<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem \<br>-C $CHANNEL_NAME \<br>-n mycc -v 1.0 \<br>-c ‘{“Args”:[“str”,”helloworld”]}’ \<br>-P “OR(‘Org1MSP.peer’,’Org2MSP.peer’)”<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/16.png" alt="Alt text"></p>
-<p><strong>//测试链码get操作</strong><br>peer chaincode query -C $CHANNEL_NAME -n mycc -c ‘{“Args”:[“get”,”str”]}’<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/17.png" alt="Alt text"></p>
-<p>//测试链码set操作<br>peer chaincode invoke -o orderer.example.com:7050 \<br>–tls –cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/<br>example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem  \<br>-C $CHANNEL_NAME -n mycc \<br>-c ‘{“Args”:[“set”,”str”,”hi zhaoyao”]}’<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/18.png" alt="Alt text"></p>
-<p>部署过程中遇到的错误及改正措施：<br>创建channel时出错，Orderer log如下<br> <img src="https://raw.githubusercontent.com/Deliayao123/Markdown-picture/master/19.png" alt="Alt text"><br>解决办法：清空所有docker容器，清空所有的环境从新开始部署。</p>
-<p>遇到什么问题可以给我留言，或者发邮件给我，我会及时给大家回复~</p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>小主</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="ZY 微信支付">
-        <p>微信支付</p>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2018-12-10T18:21:45+08:00" content="2018-12-10">
+          12-10
+        </time>
       </div>
-    
 
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="ZY 支付宝">
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/11/09/谈谈我与区块链的两三件事/" rel="next" title="谈谈我与区块链的两三件事">
-                <i class="fa fa-chevron-left"></i> 谈谈我与区块链的两三件事
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/15/云计算，雾计算，露计算和区块链的关系/" rel="prev" title="云计算，雾计算，边缘计算和区块链的关系">
-                云计算，雾计算，边缘计算和区块链的关系 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
+
     </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -501,13 +339,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
         </div>
         
@@ -742,10 +573,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 

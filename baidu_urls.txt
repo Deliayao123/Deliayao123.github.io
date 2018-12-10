@@ -1,5 +1,5 @@
+https://deliayao123.github.io/2018/12/10/计算机系统结构———量化研究方法/
 https://deliayao123.github.io/2018/11/20/《计算理论解析》读书笔记/
 https://deliayao123.github.io/2018/11/20/区块链-赋能数字经济/
 https://deliayao123.github.io/2018/11/18/对于区块链的新思考/
 https://deliayao123.github.io/2018/11/15/云计算，雾计算，露计算和区块链的关系/
-https://deliayao123.github.io/2018/11/10/在ubuntu18-04的fabric1-2-0网络中手动部署chaincode（完全跑通版）/
